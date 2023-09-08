@@ -1,0 +1,14 @@
+Section: metapackages
+Priority: important
+Homepage: https://lmd-linux.github.io/lmd-server
+Standards-Version: 4.6.2
+
+Package: lmd-server
+Version: 1
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Depends: lmd-minimal, ifupdown, openssh-server
+Architecture: all
+Copyright: license.txt
+Changelog: changelog
+Readme: README.Debian
+Description: Packages for lmd Linux server
