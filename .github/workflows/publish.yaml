@@ -1,0 +1,14 @@
+name: Publish
+on:
+  push:
+    path:
+      - 'debian/**'
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish
+        uses: lmd-linux/publish-equivs@v1
+        with:
+          repo: ${{ github.repository }}
+          ssh_key: ${{ secrets.SSH_KEY }}
